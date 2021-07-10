@@ -9,7 +9,7 @@ button.addEventListener("click", function () {
   fetch(
     "http://api.openweathermap.org/data/2.5/weather?q=" +
       inputValue.value +
-      "&units=metric&appid=854ba8fe93319bd9fe611133fa3f4329"
+      "&units=metric&appid={API TOKEN}"
   )
     .then((response) => response.json())
     .then((data) => {
